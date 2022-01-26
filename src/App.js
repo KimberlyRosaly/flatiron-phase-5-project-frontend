@@ -5,6 +5,18 @@ import './App.css';
 // ACCESS TO STATE AND LIFECYCLE METHODS
 class App extends React.Component {
 
+  // PLAY WITH A LIFECYCLE METHOD
+  componentDidMount() {
+    // MAKE A BASIC, DEFAULT 'GET' FETCH REQUEST
+    fetch('http://127.0.0.1:3001/api/v1/artists')
+    // CHAIN TO HANDLE THE RECEIVED ASYNCHRONOUS RESPONSE
+    // RECEIVE THE PROMISE *THEN* FORMAT INTO JAVASCRIPT OBJECT NOTATION
+    .then(response => response.json())
+    // *THEN* DO SOMETHING WITH THE JSON DATA
+    .then(data => console.log(data))
+    // .then(data => console.log(data[0].name))    <---RETURNS 1ST OBJECT'S NAME ATTRIBUTE IN RETURNED ARRAY
+  }
+
   render() {
     return (
       <div className="App">
@@ -12,9 +24,6 @@ class App extends React.Component {
         <br/>
         ♥
       </div>
-    )
-  }
-  
-}
+    )}}
 
 export default App;
