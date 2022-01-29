@@ -3,6 +3,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=REDUXrelated
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=IMPORTSend
 
 
@@ -10,8 +14,11 @@ import App from './App';
 ReactDOM.render(
   <React.StrictMode>
 
-    {/* LOAD UP THE APP COMPONENT IMPORTED UP TOP */}
-    <App />
+    {/* WRAP PARENT COMPONENT TO ALLOW CHILDREN STORE ACCESS */}
+    <Provider>
+          {/* LOAD UP THE APP COMPONENT IMPORTED UP TOP */}
+          <App />
+    </Provider>
 
   </React.StrictMode>,
 
