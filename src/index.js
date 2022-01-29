@@ -10,15 +10,21 @@ import thunk from 'redux-thunk';
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=IMPORTSend
 
 
+// DECLARE & CREATE THE GLOBAL STORE OBJECT | HAND IT THE REDUCER | CALL FUNCTION TO CREATE THE THUNK ASYNC BRIDGE
+let store = createStore(reducer, applyMiddleware(thunk))
+
+
 // DETERMINE WHAT TO RENDER ON THE USER'S PAGE, USING REACT
 ReactDOM.render(
   <React.StrictMode>
 
-    {/* WRAP PARENT COMPONENT TO ALLOW CHILDREN STORE ACCESS */}
-    <Provider>
-          {/* LOAD UP THE APP COMPONENT IMPORTED UP TOP */}
-          <App />
-    </Provider>
+            {/* WRAP PARENT COMPONENT TO ALLOW CHILDREN STORE ACCESS */}
+            <Provider>
+
+                      {/* LOAD UP THE APP COMPONENT IMPORTED UP TOP */}
+                      <App />
+
+            </Provider>
 
   </React.StrictMode>,
 
