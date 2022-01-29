@@ -5,6 +5,7 @@ import './App.css';
 // ACCESS TO STATE AND LIFECYCLE METHODS
 class App extends React.Component {
 
+// = - = - = - = - = - = - = - = - = - = - = T E S T I NG
   // PLAY WITH A LIFECYCLE METHOD
   componentDidMount() {
     // MAKE A BASIC, DEFAULT 'GET' FETCH REQUEST
@@ -16,6 +17,7 @@ class App extends React.Component {
     .then(data => console.log(data))
     // .then(data => console.log(data[0].name))    <---RETURNS 1ST OBJECT'S NAME ATTRIBUTE IN RETURNED ARRAY
   }
+// = - = - = - = - = - = - = - = - = - = - = TESTINGend
 
   render() {
     return (
