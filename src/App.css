@@ -2,15 +2,68 @@
   text-align: center;
 }
 
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App .Intro {
+  background-color: yellow;
+  background-image: url('https://i.giphy.com/media/Ph0oIVQeuvh0k/giphy.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;  
 }
 
+/** =-=-=-=-=-=-=-=-=-=-=N A V I G A T I O N BAR */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;  
+}
+
+.navbar ul li {
+  float: right;
+  display: block;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+/** =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+.artist {
+  background-color: blueviolet;
+  border-radius: 25px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 50px;
+}
+
+.artist-profile-image {
+  height: 200px;
+  border-radius: 80px;
+}
+
+.artwork-image {
+  height: 200px;
+  border-radius: 25px;
+}
+
+.showcase {
+  background-color: darkgreen;
+  border-radius: 20px;
+}
+
+.artworks {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+
+  flex-wrap: wrap;
+}
+
+.artwork {
+  padding: 20px;
+  background-color: darkblue;
+  border-radius: 20px;
+
+  flex: 0 0 33.333333%;
+}

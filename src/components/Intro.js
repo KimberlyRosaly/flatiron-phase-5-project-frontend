@@ -1,10 +1,17 @@
 import React from 'react';
 
-const Intro = () => {
-    return (
+class Intro extends React.Component {
+
+    componentDidMount(){
+        setTimeout(() => {this.props.history.push("/artgallery")}, 500);
+    }
+
+    render() {
+        return (            
         <div className="Intro">
-            welcome, human
+            w.e.l.c.o.m.e.,. .h.u.m.a.n. 
         </div>
-    )
+        )
+    }
 }
 export default Intro;

@@ -6,20 +6,26 @@ import { Link } from 'react-router-dom';
 const NavigationBar = () => {
 
     return (
-        <div>
+        <div className='navbar'>
+            <ul>
+                <Link to="/artgallery">
+                    <li>
+                        a r t g a l l e r y
+                    </li>
+                </Link>
 
-            <Link to="/artgallery">
-                <div>
-                    a r t g a l l e r y
-                </div>
-            </Link>
+                <Link to="/artgallery/artists">
+                    <li>
+                        a r t i s t s
+                    </li>
+                </Link>
 
-            <Link to="/artgallery/artists">
-                <div>
-                    a r t i s t s
-                </div>
-            </Link>
-
+                <Link to="/artgallery/artworks">
+                    <li>
+                        a r t w o r k s
+                    </li>
+                </Link>
+            </ul>
         </div>
     )
 

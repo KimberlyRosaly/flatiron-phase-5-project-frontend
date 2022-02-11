@@ -11,7 +11,7 @@ My name is Kim and I am in love with code.
 I am also in love with art.
 <br>
 <br>
-Here, you will find my attempt to gather my two loves into one world of development. This application strives to show off my own artwork along with the artwork ( and information ) of other cherished artists that I soulfully support.
+Here, you will find my attempt to gather my two loves into one world of development. This application strives to show off my own artwork along with the artwork ( and information ) of other cherished artists that I soulfully support. Hopefully, you enjoy this!
 <br>
 <br>
 
