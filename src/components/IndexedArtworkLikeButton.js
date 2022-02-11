@@ -9,8 +9,6 @@ const IndexedArtworkLikeButton = (props) => {
     
     function handleClick() {
         props.likeIndexedArtwork(props.id, props.likes)
-        // setState((prevState) => {return {likes: prevState.likes +1}})
-        // setState = (prevState) => { likes: state.likes + 1}
     }
      
     return (
