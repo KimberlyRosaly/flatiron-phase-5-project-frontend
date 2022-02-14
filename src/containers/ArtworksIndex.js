@@ -7,15 +7,14 @@ import IndexedArtwork from '../components/IndexedArtwork';
 //?  F U N C T I O N A L   C O M P O N E N T
 const ArtworksIndex = (props) => {
 
-    return (
-        <div>
+    return (<>
+                <NavigationBar />
 
-            <NavigationBar />
-            
-            {props.artworks.map(artwork => <IndexedArtwork {...artwork} key={artwork.id} />)}
-                
-        </div>
-    )
+                <div className='artwork-index'>                
+                    {props.artworks.map(artwork => <IndexedArtwork {...artwork} key={artwork.id} />)}                    
+                </div>
+
+            </>)
 }
 
 //? MAYBE STATE STUFF WITH CONNECT CAN LIVE HERE????

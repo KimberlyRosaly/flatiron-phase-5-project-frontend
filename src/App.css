@@ -114,3 +114,18 @@ body {
   text-align: right;  
 }
 /*? =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+.artwork-index {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+
+.indexed-artwork {
+  background-color: rgb(99, 69, 126);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+/*? =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */

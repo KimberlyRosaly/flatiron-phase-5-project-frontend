@@ -7,12 +7,12 @@ const IndexedArtwork = (props) => {
     // console.log(props)
 
     return (
-        <div>
+        <div className='indexed-artwork'>
             <hr />
             <h2>{props.title}</h2>
             {props.artist.name}
             <br />
-            <img src={props.image_url} style={{height: '300px'}} />
+            <img src={props.image_url} style={{height: '200px'}} />
             <br />
             ( {props.likes} ) ♥'s
 
