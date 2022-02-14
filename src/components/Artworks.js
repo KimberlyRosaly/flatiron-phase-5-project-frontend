@@ -9,7 +9,7 @@ const Artworks = (props) => {
     return (
         <div className='artworks'>
             
-            {props.artworks.map(a => <Artwork artwork={a} key={a.id} />)}
+            {props.artworks ? props.artworks.map(a => <Artwork artwork={a} key={a.id} />) : null}
 
         </div>
     )
