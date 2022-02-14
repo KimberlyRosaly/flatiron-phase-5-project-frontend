@@ -3,13 +3,13 @@ import React from 'react';
 class Intro extends React.Component {
 
     componentDidMount(){
-        setTimeout(() => {this.props.history.push("/artgallery")}, 500);
+        setTimeout(() => {this.props.history.push("/artgallery")}, 5000);
     }
 
     render() {
         return (            
         <div className="Intro">
-            w.e.l.c.o.m.e.,. .h.u.m.a.n. 
+            w.e.l.c.o.m.e., .h.u.m.a.n. 
         </div>
         )
     }
