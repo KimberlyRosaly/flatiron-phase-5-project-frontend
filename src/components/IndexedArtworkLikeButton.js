@@ -7,13 +7,13 @@ import { likeIndexedArtwork } from '../actions/likeIndexedArtwork';
 
 const IndexedArtworkLikeButton = (props) => {    
     
-    function handleClick() {
+    function handleOnClick() {
         props.likeIndexedArtwork(props.id, props.likes)
     }
      
     return (
         <div>
-            <button onClick={handleClick} className='like-button'>            
+            <button onClick={handleOnClick} className='like-button'>            
                 ♥
             </button>
         </div>
