@@ -1,3 +1,9 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* THE ENTIRE APPLICATION'S BACKGROUND */
+body {
+  background-color: rgb(19, 19, 19);
+}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 .App {
   text-align: center;
 }
@@ -20,6 +26,8 @@
 }
 
 .navbar ul li {
+  font-family: 'Geo', sans-serif;
+  color: yellow;
   float: right;
   display: block;
   text-align: center;
@@ -35,6 +43,7 @@
   margin-top: 50px;
   margin-bottom: 50px;
   padding: 50px;
+  font-family: Geo;
 }
 
 .artist-profile-image {
@@ -48,15 +57,15 @@
 }
 
 .showcase {
-  background-color: darkgreen;
+  background-color: black;
   border-radius: 20px;
+  margin: 20px;
 }
 
 .artworks {
   display: flex;
   justify-content: space-around;
   padding: 20px;
-
   flex-wrap: wrap;
 }
 
@@ -64,6 +73,44 @@
   padding: 20px;
   background-color: darkblue;
   border-radius: 20px;
-
-  flex: 0 0 33.333333%;
+  margin: 10px;
 }
+
+/*! =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+.like-button {
+  background-color: red;
+  background: $baseColor;
+  border: 3px solid;
+  border-radius: 100%;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;  
+}
+/*! =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/*? =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+.artist-header {
+  /* GOOGLE FONT IMPLEMENTATION */
+  font-family: 'VT323', monospace;
+  /* =-=-=-=-=-=-=-=-=-=-=-=-=-= */  
+  box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem black;
+  
+  text-align: left;
+  background-color: darkblue;
+  border-radius: 10px;;
+  padding: 25px;
+  margin: 50px; 
+  color: darkgoldenrod;
+}
+
+.artist-header h1 {  
+  letter-spacing: 10px;
+  color: #e19710;
+  text-shadow: 3px 3px 3px rgb(0, 0, 0);      
+}
+.artist-contact {  
+  font-family: Geo;
+  color: #e19710;
+  text-shadow: 3px 3px 3px rgb(0, 0, 0);    
+  text-align: right;  
+}
+/*? =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */

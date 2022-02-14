@@ -13,10 +13,10 @@ export default function reducer(state=initialState, action){
             return { ...state, artworks: action.payload }
         
     // = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = -
-        case 'LIKE_ARTWORK':        
-        // console.log("REDUCER => STATE:", state, "ACTIONPAYLOAD:", action.payload)
+        case 'LIKE_ARTWORK':
     
-            //* PAYLOAD CONTAINS UPDATED/PATCHED ARTWORK | COPY ALL OF STATE, 
+            //* P A Y L O A D CONTAINS UPDATED/PATCHED ARTWORK |
+            //^ C O P Y  ALL OF  S T A T E , R E P L A C E OLD ARTWORK WITH PATCHED ARTWORK INSIDE OF ARTWORKS KEY ARRAY
             //* ITERATION FOR EACH ELEMENT IN ARRAY OF ARTWORK OBJECTS
             //* IF THE STATE ARTWORK'S ID EVALUATES TO THE PAYLOAD'S OBJECT ID, COPY PAYLOAD OBJECT INTO NEW STATE
             //* OTHERWISE, THE ARTWORK OBJECT IN STATE IS TO BE AS IS
@@ -25,7 +25,7 @@ export default function reducer(state=initialState, action){
 
             //* 'MAP(i => ...)' - CALLBACK FUNCTION - CALLED FOR EVERY ELEMENT OF ARRAY - 
             //* RETURNS COPY OF ARRAY WITH LOGICAL EVALUATION ADJUSTMENT FOR EACH TIME ITERATED            
-            //* V O I L A ! STATE BECOMES A SAME COPY E X C E P T FOR THE STATE OBJECT THAT IS DIFFERENT
+            //* V O I L A ! STATE BECOMES A SAME COPY E X C E P T FOR THE STATE OBJECT THAT IS DIFFERENT (duh!)
     // = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = -
     
         default:

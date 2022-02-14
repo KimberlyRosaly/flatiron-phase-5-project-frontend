@@ -1,19 +1,19 @@
+//^ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 import React from 'react';
 import { Link } from 'react-router-dom';
-// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-import Artist from './Artist';
+//^ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 import NavigationBar from './NavigationBar';
-// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+//^ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 
 //?  F U N C T I O N A L   C O M P O N E N T
-const Artists = (props) => {
-
-    
+const Artists = (props) => {    
 
     return (
         <div>
+{/*  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  */}
             <NavigationBar />
+{/*  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  */}
 
             
             {props.artists.map(a => 

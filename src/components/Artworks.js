@@ -1,6 +1,8 @@
+//^ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 import React from 'react';
-
+//^ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 import Artwork from './Artwork';
+//^ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 //?  F U N C T I O N A L   C O M P O N E N T
 const Artworks = (props) => {

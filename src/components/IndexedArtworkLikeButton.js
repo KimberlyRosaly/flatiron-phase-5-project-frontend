@@ -13,7 +13,7 @@ const IndexedArtworkLikeButton = (props) => {
      
     return (
         <div>
-            <button onClick={handleClick} style={{backgroundColor: 'red'}}>            
+            <button onClick={handleClick} className='like-button'>            
                 ♥
             </button>
         </div>
