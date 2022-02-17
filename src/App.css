@@ -35,6 +35,13 @@ body {
   text-decoration: none;
 }
 /** =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+.showcase {
+  background-color: black;
+  color: yellow;
+  border-radius: 20px;
+  margin: 20px;
+}
+/** =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 .artist {
   background-color: blueviolet;
   border-radius: 25px;
@@ -56,11 +63,6 @@ body {
   border-radius: 25px;
 }
 
-.showcase {
-  background-color: black;
-  border-radius: 20px;
-  margin: 20px;
-}
 
 .artworks {
   display: flex;
@@ -76,17 +78,6 @@ body {
   margin: 10px;
 }
 
-/*! =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
-.like-button {
-  background-color: red;
-  background: $baseColor;
-  border: 3px solid;
-  border-radius: 100%;
-  cursor: pointer;
-  height: 30px;
-  width: 30px;  
-}
-/*! =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 /*? =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 .artist-header {
   /* GOOGLE FONT IMPLEMENTATION */
@@ -114,18 +105,45 @@ body {
   text-align: right;  
 }
 /*? =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/* ------------A R T W O R K   I N D E X   P A G E */
 .artwork-index {
+  font-family: 'VT323', monospace;
   display: flex;
   justify-content: space-evenly;
   padding: 20px;
   flex-wrap: wrap;
 }
-
-
 .indexed-artwork {
   background-color: rgb(99, 69, 126);
   padding: 20px;
   margin: 10px;
   border-radius: 10px;
+  box-shadow: 2px 2px 5px white;
+}
+.indexed-artwork img {
+  box-shadow: 0px 0px 3px rgb(255, 0, 0);
+  height: 200px;
+}
+.indexed-artwork h2 {
+
+  color: rgb(211, 0, 0);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);    
+}
+.indexed-artwork p {
+  font-style: italic;
+  text-align: left;
+  margin-top: 1px;
 }
 /*? =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/*! =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+.like-button {
+  background-color: rgba(193, 0, 0, 0.626);
+  border: 3px solid;
+  border-radius: 100%;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;  
+  box-shadow: 1px 1px 1px white;
+  float: right;
+}
+/*! =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */

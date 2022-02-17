@@ -7,18 +7,20 @@ const IndexedArtwork = (props) => {
     // console.log(props)
 
     return (
-        <div className='indexed-artwork'>
-            <hr />
+        <div className='indexed-artwork'>  
+
             <h2>{props.title}</h2>
-            {props.artist.name}
-            <br />
-            <img src={props.image_url} style={{height: '200px'}} />
-            <br />
-            ( {props.likes} ) ♥'s
 
-            <IndexedArtworkLikeButton {...props}/>
+            
+            <img src={props.image_url} />
+            <br />
 
-            <hr />
+            <p>{props.artist.name}</p>
+
+            <h3>( {props.likes} ) ♥'s</h3>
+
+            <IndexedArtworkLikeButton {...props}/>     
+
         </div>
     )
 }
