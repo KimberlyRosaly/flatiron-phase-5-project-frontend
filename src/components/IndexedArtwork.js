@@ -16,7 +16,7 @@ const IndexedArtwork = (props) => {
             <img src={props.image_url} /><br />            
 
             <Link to={`/artgallery/artists/${props.artist.id}`}>
-                <p>{props.artist.name}</p>
+                <p>{props.artist.name} ☚</p>
             </Link>
 
             <h3>( {props.likes} ) ♥'s</h3>

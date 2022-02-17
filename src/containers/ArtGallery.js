@@ -1,6 +1,8 @@
 //^ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 import React from 'react';
 //^ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+//^ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 import ArtistShowcase from './ArtistShowcase';
 import NavigationBar from '../components/NavigationBar'
 //^ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-IMPORTSend
@@ -15,7 +17,8 @@ class ArtGallery extends React.Component {
                 <NavigationBar />
 {/*  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  */}
                 <ArtistShowcase artist={this.props.showcase} />
-{/*  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  */}            
+{/*  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  */}        
+           
             </div>
         )
     }

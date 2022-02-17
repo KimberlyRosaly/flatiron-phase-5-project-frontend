@@ -125,14 +125,16 @@ body {
   height: 200px;
 }
 .indexed-artwork h2 {
-
+  font-size: 35px;
   color: rgb(211, 0, 0);
   text-shadow: 1px 1px 1px rgb(0, 0, 0);    
+  text-decoration: underline;     
 }
 .indexed-artwork p {
   font-style: italic;
   text-align: left;
   margin-top: 1px;
+  color: black;
 }
 /*? =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 /*! =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
