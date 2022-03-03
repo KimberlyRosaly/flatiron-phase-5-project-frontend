@@ -46,21 +46,37 @@ body {
 .showcase h1 {
   font-size: 60pt;
   letter-spacing: 10pt;
+  padding-top: 50px;
+}
+.showcase h2 {
+  font-size: 20pt;
+  letter-spacing: 5pt;
+  padding-bottom: 30px;
+
 }
 /* SHOWCASE CONTAINER FEATURING ARTIST'S HUMAN IMAGE AND INFO */
 .s-container {
+  padding-right: 90px;  
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
 }
         /* LEFT SIDE OF THE ARTIST'S INFO CONTAINER*/
-        .s-left img {
-          height: 300px;
-          border-radius: 100%;
+        .s-left {
+          flex: 1;          
         }
+        .s-left img {
+          height: 300px; 
+          border-radius: 50%;
+          border-style: dotted solid;
+        }
+        
         /* RIGHT SIDE OF THE ARTIST'S INFO CONTAINER*/
         .s-right {
+          flex: 1;          
           color: purple;
           font-size: 25px;
+          border-style: solid dotted;          
         }
 /** =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 .artist {

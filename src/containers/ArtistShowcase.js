@@ -8,6 +8,7 @@ const ArtistShowcase = (props) => {
     return (
         <div className='showcase'>
                     <h1>{props.artist ? props.artist.name : null}</h1>
+                    <h2>{props.artist ? props.artist.title : null }</h2>
 
 {/*  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  */}
             <div className='s-container'>
@@ -15,9 +16,6 @@ const ArtistShowcase = (props) => {
                     <img src={props.artist ? props.artist.image_url : null} />
                 </div>
                 <div className='s-right'>
-                    {props.artist ? props.artist.title : null }
-                    <br />
-                    <br />
                     SKILLS: <br />
                     {props.artist ? props.artist.skills : null }<br />
                     TOOLS: <br />
