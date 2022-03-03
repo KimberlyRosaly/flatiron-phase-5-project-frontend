@@ -36,11 +36,32 @@ body {
 }
 /** =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 .showcase {
+  font-family: 'VT323', monospace;
   background-color: black;
   color: yellow;
   border-radius: 20px;
   margin: 20px;
 }
+
+.showcase h1 {
+  font-size: 60pt;
+  letter-spacing: 10pt;
+}
+/* SHOWCASE CONTAINER FEATURING ARTIST'S HUMAN IMAGE AND INFO */
+.s-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+        /* LEFT SIDE OF THE ARTIST'S INFO CONTAINER*/
+        .s-left img {
+          height: 300px;
+          border-radius: 100%;
+        }
+        /* RIGHT SIDE OF THE ARTIST'S INFO CONTAINER*/
+        .s-right {
+          color: purple;
+          font-size: 25px;
+        }
 /** =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 .artist {
   background-color: blueviolet;
