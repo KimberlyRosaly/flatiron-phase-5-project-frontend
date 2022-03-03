@@ -15,7 +15,17 @@ const ArtistShowcase = (props) => {
                     <img src={props.artist ? props.artist.image_url : null} />
                 </div>
                 <div className='s-right'>
-                    <p>{props.artist ? props.artist.title : null }</p>
+                    {props.artist ? props.artist.title : null }
+                    <br />
+                    <br />
+                    SKILLS: <br />
+                    {props.artist ? props.artist.skills : null }<br />
+                    TOOLS: <br />
+                    {props.artist ? props.artist.tools : null }<br />
+                    SITE: <br />
+                    {props.artist ? props.artist.website_url : null }<br />
+                    BIOGRAPHY: <br />
+                    {props.artist ? props.artist.biography : null}
                 </div>
             </div>
 {/*  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  */}
