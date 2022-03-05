@@ -40,23 +40,27 @@ body {
   background-color: black;
   color: yellow;
   border-radius: 20px;
-  margin: 20px;
+  /* MARGIN SHORTHAND : TOP RIGHT BOTTOM LEFT */
+  margin: -45px 20px 20px 20px;
 }
 
 .showcase h1 {
   font-size: 60pt;
   letter-spacing: 10pt;
+  text-shadow: 2px 2px red;
   padding-top: 50px;
 }
 .showcase h2 {
   font-size: 20pt;
   letter-spacing: 5pt;
   padding-bottom: 30px;
+  text-shadow: 2px 2px blue;
 
 }
 /* SHOWCASE CONTAINER FEATURING ARTIST'S HUMAN IMAGE AND INFO */
 .s-container {
   padding-right: 90px;  
+  padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,6 +73,10 @@ body {
           height: 300px; 
           border-radius: 50%;
           border-style: dotted solid;
+          border-width: 7px;
+          border-color: purple;
+          box-shadow: 2px 2px blue;
+
         }
         
         /* RIGHT SIDE OF THE ARTIST'S INFO CONTAINER*/
@@ -76,7 +84,9 @@ body {
           flex: 1;          
           color: purple;
           font-size: 25px;
-          border-style: solid dotted;          
+          border-style: solid dotted;    
+          text-shadow: 1px 1px red;     
+          box-shadow: 2px 2px blue; 
         }
 /** =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 .artist {
@@ -98,6 +108,7 @@ body {
 .artwork-image {
   height: 200px;
   border-radius: 25px;
+  box-shadow: 2px 2px rgb(78, 2, 2);
 }
 
 
@@ -110,9 +121,11 @@ body {
 
 .artwork {
   padding: 20px;
-  background-color: darkblue;
+  background-image: linear-gradient(to bottom right, darkblue, rgb(1, 1, 88));
   border-radius: 20px;
   margin: 10px;
+  text-shadow: 2px 2px red;
+  box-shadow: 2px 2px red;
 }
 
 /*? =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
