@@ -8,8 +8,8 @@ const Artwork = (props) => {
     return (
         <div className='artwork'>
             
-            <hr />
             <img src={props.artwork.image_url} className="artwork-image" />
+            <hr />
             <div>
                 {props.artwork.title}
                 <br />
