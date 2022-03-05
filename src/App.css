@@ -162,6 +162,7 @@ body {
   justify-content: space-evenly;
   padding: 20px;
   flex-wrap: wrap;
+  flex-direction: row-reverse;
 }
 .indexed-artwork {
   background-color: rgb(99, 69, 126);
