@@ -9,21 +9,24 @@ const NavigationBar = () => {
         <div className='navbar'>
             <ul>
                 <Link to="/artgallery">
-                    <li>
-                        a r t g a l l e r y
+                    <li><button className='n-button'>
+                         <div style={{color:'red'}}>-♥-</div>                         
+                         a r t g a l l e r y
+                    <br/>showcase
+                    </button>
                     </li>
                 </Link>
 
                 <Link to="/artgallery/artists">
-                    <li>
+                    <li><button className='n-button'>
                         a r t i s t s
-                    </li>
+                    </button></li>
                 </Link>
 
                 <Link to="/artgallery/artworks">
-                    <li>
+                    <li><button className='n-button'>
                         a r t w o r k s
-                    </li>
+                    </button></li>
                 </Link>
             </ul>
         </div>
