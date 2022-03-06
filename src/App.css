@@ -60,7 +60,9 @@ body {
   color: yellow;
   border-radius: 20px;
   /* MARGIN SHORTHAND : TOP RIGHT BOTTOM LEFT */
-  margin: -90px 40px 20px 40px;
+  margin: -90px 40px 0px 40px;
+  box-shadow: 1px -1px 1px yellow;
+  padding-bottom: 40px;
 }
 
 .showcase h1 {
