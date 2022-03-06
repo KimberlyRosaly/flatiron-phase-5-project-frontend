@@ -26,13 +26,32 @@ body {
 }
 
 .navbar ul li {
-  font-family: 'Geo', sans-serif;
-  color: yellow;
   float: right;
   display: block;
   text-align: center;
   padding: 10px 15px;
-  text-decoration: none;
+}
+
+.n-button {
+  font-family: 'Geo', sans-serif;
+  font-size: 15pt;
+  background-image: linear-gradient(to bottom right, purple, magenta);
+  border-radius: 10%;
+  padding: 10px;
+  color: yellow;
+  text-shadow: 1px 1px blue;
+  box-shadow: 3px 3px yellow;
+  border-color: orange;
+}
+.n-button:hover {
+  background-image: linear-gradient(to bottom right, magenta, rgb(48, 0, 48));
+  color: black;
+  font-weight: bold;
+  text-shadow: 1px 1px gray;
+  box-shadow: 0px 0px yellow;
+}
+.n-button:active {
+  color: red;
 }
 /** =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 .showcase {
