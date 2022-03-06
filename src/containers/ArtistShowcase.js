@@ -20,8 +20,10 @@ const ArtistShowcase = (props) => {
                     {props.artist ? props.artist.skills : null }<br />
                     TOOLS: <br />
                     {props.artist ? props.artist.tools : null }<br />
-                    SITE: <br />
-                    {props.artist ? props.artist.website_url : null }<br />
+                    SITE: <br />                    
+                    <a style={{textDecoration: 'none'}} 
+                    href={props.artist ? props.artist.website_url : null}>{props.artist ? props.artist.website_url : null}</a>
+                    <br />
                     BIOGRAPHY: <br />
                     {props.artist ? props.artist.biography : null}
                 </div>
