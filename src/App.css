@@ -147,6 +147,8 @@ body {
   margin: 10px;
   text-shadow: 2px 2px red;
   box-shadow: 2px 2px red;
+
+  flex: 1;
 }
 
 /*? =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
