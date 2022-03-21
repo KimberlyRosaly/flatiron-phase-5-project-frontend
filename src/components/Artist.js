@@ -9,7 +9,7 @@ import ArtistContact from './ArtistContact';
 //?  F U N C T I O N A L   C O M P O N E N T
 const Artist = (props) => {
 
-    let artist = props.artists[props.match.params.id - 1]    
+    let artist = props.artists[props.match.params.id - 1]
 
     return (
         <div>
