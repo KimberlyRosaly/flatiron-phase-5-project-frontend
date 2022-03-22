@@ -39,6 +39,18 @@ class App extends React.Component {
  {/* 'RENDER' TAKES IN A FUNCTION  | 'ROUTEPROPS' GIVES ACCESS TO 'HISTORY' 'PUSH' 'MATCH' ♥ */}
 
           {/* 'ROUTEPROPS' WILL GIVE ACCESS TO PARAMS AND GRAB ONTO AN ID */}
+
+
+//^ = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - =
+
+{/* ARTWORK SHOW PAGE > NESTED UNDER ARTIST'S SHOW PAGE */}
+
+{/* <Route path="/artgallery/artists/:artistID/artworks/:artworkID" /> */}
+
+
+//^ = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - =
+
+
           <Route path="/artgallery/artists/:id" render={(routeProps) => <Artist {...routeProps} artists={this.props.artists} /> } />
           <Route path="/artgallery/artists" render={(routeProps) => <Artists {...routeProps} artists={this.props.artists} />} />
           
