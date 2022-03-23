@@ -11,7 +11,9 @@ const IndexedArtwork = (props) => {
 
     return (
         <div className='indexed-artwork'>  
-            <h2>{props.title}</h2>
+            <Link to={`/artgallery/artworks/${props.id}`}>
+                <h2>{props.title} ☚</h2>
+            </Link>
             
             <img src={props.image_url} /><br />            
 
