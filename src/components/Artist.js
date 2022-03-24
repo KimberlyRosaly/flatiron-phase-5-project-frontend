@@ -1,6 +1,8 @@
 //^ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 import React from 'react';
 //^ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+import { Link } from 'react-router-dom';
+//^ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 import NavigationBar from './NavigationBar';
 import ArtistHeader from './ArtistHeader';
 import ArtistContact from './ArtistContact';
@@ -22,7 +24,9 @@ const Artist = (props) => {
 
                 {artist.artworks.map(a => 
                     <div key={a.id}>
-                        <img src={a.image_url} className='artwork-image' />
+                        <Link to={`/artgallery/artworks/${a.id}`}>
+                            <img src={a.image_url} className='artwork-image' />
+                        </Link>
                         <h2 style={{textShadow: '1px 1px 1px white', color: 'violet'}}>
                             "{a.title}"
                         </h2>
