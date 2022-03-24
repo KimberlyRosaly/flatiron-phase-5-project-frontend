@@ -12,12 +12,27 @@ const ArtworkShow = (props) => {
 
     return (
         <div>
+{/*  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  */}
             <NavigationBar />
+{/*  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  */}
             <div>
-                {theArtwork ? theArtwork.title : null}
-                {/* ▼ IMAGE LIVES HERE ▼ */}
-                <div style={{ backgroundImage: `url(${theArtwork ? theArtwork.image_url : null})` }} className='artwork-show-image' />
-                BY : {theArtwork ? theArtwork.artist.name : null}
+                <div className='artwork-show-header'>
+                    {theArtwork ? theArtwork.title : null}</div>
+                              
+{/*  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  */}
+                <div className='artwork-show-container'>
+
+                    <div className='artwork-show-image'>
+                        <img src={theArtwork ? theArtwork.image_url : null} /></div>
+
+                    <div className='artwork-show-info'>
+                        <h2>"{theArtwork ? theArtwork.description : null}"</h2>
+                        <p>{theArtwork ? theArtwork.dimensions : null}</p>
+                        <p>{theArtwork ? theArtwork.medium : null}</p>
+                        </div>           
+
+                </div>
+{/*  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  */}                
             </div>
         </div>
     )
