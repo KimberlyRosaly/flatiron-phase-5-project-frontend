@@ -227,12 +227,43 @@ body {
 /*! =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 /*^ =========================ARTWORK SHOW CONTAINER */
 /*! =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
-
-.artwork-show-image {
-  height: 50vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+.artwork-show-header {
+  font-family: 'VT323', monospace;
+  letter-spacing: 0.3em;
+  color: purple;
+  font-size: 75px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-shadow: 1px 1px rgb(250, 221, 0);
 }
+/*! =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+.artwork-show-container {
+  display: flex;
+}
+      .artwork-show-image {  
+        background-image: linear-gradient(to bottom right, darkblue, rgb(1, 1, 88));
+        border-radius: 20px;
+        box-shadow: 2px 2px red;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        flex: 1;
+      }
+            .artwork-show-image img {
+              border-radius: 20px;
+              box-shadow: 1px -1px 1px yellow;
+              width: 40vw;
+              
+            }
 
+      .artwork-show-info {
+        font-family: 'VT323', monospace;
+        color: purple;
+        font-size: 25px;
+        text-shadow: 1px 1px rgb(250, 0, 0);  
+        margin-left: 30px;
+        margin-right: 30px;
+        flex: 1;  
+      }
 /*! =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
