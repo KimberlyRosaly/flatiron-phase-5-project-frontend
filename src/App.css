@@ -225,3 +225,14 @@ body {
   float: right;
 }
 /*! =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/*^ =========================ARTWORK SHOW CONTAINER */
+/*! =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.artwork-show-image {
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*! =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
