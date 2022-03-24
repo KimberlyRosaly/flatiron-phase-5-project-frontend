@@ -1,6 +1,8 @@
 //^ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 import React from 'react'
 //^ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+import { Link } from 'react-router-dom'
+//^ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 import NavigationBar from '../components/NavigationBar'
 //^ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
@@ -29,7 +31,7 @@ const ArtworkShow = (props) => {
                         <h2>"{theArtwork ? theArtwork.description : null}"</h2>
                         <p>{theArtwork ? theArtwork.dimensions : null}</p>
                         <p>{theArtwork ? theArtwork.medium : null}</p>
-                        </div>           
+                        <p>CREATED BY : <Link to={`/artgallery/artists/${theArtwork.artist.id}`}>{theArtwork ? theArtwork.artist.name : null}</Link></p></div>           
 
                 </div>
 {/*  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  */}                
