@@ -7,7 +7,7 @@ import IndexedArtworkLikeButton from './IndexedArtworkLikeButton'
 
 const IndexedArtwork = (props) => {
 
-    // console.log(props)
+    console.log("INDEXED ARTWORK PROPS:", props)
 
     return (
         <div className='indexed-artwork'>  
