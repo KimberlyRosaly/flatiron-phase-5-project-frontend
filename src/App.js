@@ -8,6 +8,7 @@ import Intro from './components/Intro';
 import Artists from './components/Artists'
 import Artist from './components/Artist'
 import ArtworksIndex from './containers/ArtworksIndex';
+import ArtworkShow from './containers/ArtworkShow';
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 import { connect } from 'react-redux';
 import { fetchArtists } from './actions/fetchArtists';
@@ -42,12 +43,9 @@ class App extends React.Component {
 
 
 //^ = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - =
-
+{/* S T R E T C H   G O A L S   =   D O U B L E   N E S T I N G  */}
 {/* ARTWORK SHOW PAGE > NESTED UNDER ARTIST'S SHOW PAGE */}
-
 {/* <Route path="/artgallery/artists/:artistID/artworks/:artworkID" /> */}
-
-
 //^ = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - =
 
 
@@ -55,9 +53,10 @@ class App extends React.Component {
           <Route path="/artgallery/artists" render={(routeProps) => <Artists {...routeProps} artists={this.props.artists} />} />
           
           
+          {/* IM STILL SCARED */}
+          <Route path="/artgallery/artworks/:id" render={(routeProps) => <ArtworkShow {...routeProps} artworks={this.props.artworks} />} />
           {/* IM SCARED */}
           <Route path="/artgallery/artworks" render={(routeProps) => <ArtworksIndex {...routeProps} artists={this.props.artists} artworks={this.props.artworks} />} />
-
 //^ = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - =
 
           {/* <Route path="/artgallery/artists"><Artists artists={this.props.artists} /></Route> */}
