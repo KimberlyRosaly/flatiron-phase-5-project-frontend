@@ -21,7 +21,9 @@ const IndexedArtwork = (props) => {
                 <p>{props.artist.name} ☚</p>
             </Link>
 
-            <h3>( {props.likes} ) ♥'s</h3>
+            <h3 style={{}}>
+                ( <span style={{color: 'red'}}>{props.likes}</span> ) <span style={{color: 'red'}}>♥</span>'s
+            </h3>
 
             <IndexedArtworkLikeButton {...props}/>     
         </div>
