@@ -20,7 +20,7 @@ const Artists = (props) => {
                 <div key={a.id} className='artist'>
                     
                     <Link to={`/artgallery/artists/${a.id}`}>                    
-                        <h1>{a.name}</h1>
+                        <h1 style={{fontSize: '75px', color: 'darkorange', fontFamily: 'Lobster'}}>{a.name}</h1>
                     </Link>
 
                     <img className="artist-profile-image" src={a.image_url} />
