@@ -114,8 +114,11 @@ body {
 /** =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 .artist {
   
-  background-image: linear-gradient(to bottom right, blueviolet, rgba(88, 78, 1, 0.523));
-  box-shadow: 2px 2px 1px yellowgreen;
+  background-image: linear-gradient(to bottom right, blueviolet, rgba(105, 0, 203, 0.507));
+  box-shadow: 2px 2px 1px yellowgreen,
+              3px 3px 1px orangered,
+              -3px -3px 1px orangered,              
+              4px 4px rgb(205, 50, 99);
   border-radius: 25px;
   margin-left: 200px;
   margin-right: 200px;
@@ -162,10 +165,10 @@ body {
   /* GOOGLE FONT IMPLEMENTATION */
   font-family: 'VT323', monospace;
   /* =-=-=-=-=-=-=-=-=-=-=-=-=-= */  
-  box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem black;
+  box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #000000;
   
   text-align: left;
-  background-color: darkblue;
+  /* background-color: darkblue; */
   border-radius: 10px;;
   padding: 25px;
   margin: 50px; 
@@ -192,7 +195,8 @@ body {
   flex-wrap: wrap;
 }
 .indexed-artwork {
-  background-color: rgb(99, 69, 126);
+  background-image: linear-gradient(to bottom right, rgb(103, 48, 152), rgb(112, 48, 152));
+  /* background-color: rgb(); */
   padding: 10px;
   margin: 20px;
   border-radius: 10px;
@@ -211,22 +215,34 @@ body {
   text-decoration: underline;     
 }
 .indexed-artwork p {
+  font-size: 25px;
   font-style: italic;
   text-align: left;
   margin-top: 1px;
   color: black;
 }
+
+.indexed-artwork h3 {
+  text-shadow: 1px 1px 3px black;    
+  font-size: 25px;
+  margin-bottom: 10px;
+}
 /*? =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 /*! =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 .like-button {
-  background-color: rgba(193, 0, 0, 0.626);
+  background-color: rgb(255, 0, 0);
   border: 3px solid;
   border-radius: 100%;
   cursor: pointer;
   height: 30px;
   width: 30px;  
-  box-shadow: 1px 1px 1px white;
+  box-shadow: 1px 1px 1px orange,
+              1px 1px 1px yellow,
+              1px 1px 4px red;
   float: right;
+}
+.like-button:disabled {
+  background-color: black;
 }
 /*! =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 /*^ =========================ARTWORK SHOW CONTAINER */
