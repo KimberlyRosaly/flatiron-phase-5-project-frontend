@@ -113,7 +113,9 @@ body {
         }
 /** =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 .artist {
-  background-color: blueviolet;
+  
+  background-image: linear-gradient(to bottom right, blueviolet, rgba(88, 78, 1, 0.523));
+  box-shadow: 2px 2px 1px yellowgreen;
   border-radius: 25px;
   margin-left: 200px;
   margin-right: 200px;
@@ -121,9 +123,11 @@ body {
   margin-bottom: 50px;
   padding: 50px;
   font-family: Geo;
+  text-shadow: 1px 1px rgb(88, 88, 27);
 }
 
 .artist-profile-image {
+  box-shadow: 2px 2px yellow;
   height: 200px;
   border-radius: 80px;
 }
