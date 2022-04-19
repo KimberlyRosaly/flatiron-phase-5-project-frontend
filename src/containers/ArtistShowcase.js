@@ -2,6 +2,7 @@
 import React from 'react';
 //^ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 import Artworks from '../components/Artworks';
+import ArtistSupports from './ArtistSupports';
 //^ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 const ArtistShowcase = (props) => {
@@ -32,7 +33,10 @@ const ArtistShowcase = (props) => {
             
 {/*  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  */}
             <Artworks artworks={props.artist ? props.artist.artworks : null} />
-{/*  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  */}            
+{/*  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  */}       
+
+            <ArtistSupports />
+
         </div>
     )
 }
