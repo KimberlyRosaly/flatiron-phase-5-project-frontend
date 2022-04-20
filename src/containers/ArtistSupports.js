@@ -7,7 +7,22 @@ const ArtistSupports = (props) => {
 
     return (
         <div>
-            {props.artists.map( (a) => <p key={a.id}>a.name</p> )}
+            {/* { props.artists.map((a) => <p key={a.id} >a.name</p>) } */}
+            <ul>
+                    
+                <li>
+                    <h2>{ props.artists ? props.artists[0].name : null }</h2>
+                </li>
+                
+                <li>
+                    <h2>{ props.artists ? props.artists[1].name : null }</h2>
+                </li>
+                
+                <li>
+                    <h2>{ props.artists ? props.artists[2].name : null }</h2>
+                </li>
+
+            </ul>
         </div>
     )
 }
