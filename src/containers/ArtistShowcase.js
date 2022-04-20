@@ -6,6 +6,7 @@ import ArtistSupports from './ArtistSupports';
 //^ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 const ArtistShowcase = (props) => {
+    
     return (
         <div className='showcase'>
                     <h1>{props.artist ? props.artist.name : null}</h1>
@@ -35,7 +36,7 @@ const ArtistShowcase = (props) => {
             <Artworks artworks={props.artist ? props.artist.artworks : null} />
 {/*  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  */}       
 
-            <ArtistSupports />
+            <ArtistSupports artists={props.artists} />
 
         </div>
     )
