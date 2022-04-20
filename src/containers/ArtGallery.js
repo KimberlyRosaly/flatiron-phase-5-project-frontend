@@ -16,7 +16,7 @@ class ArtGallery extends React.Component {
 {/*  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  */}
                 <NavigationBar />
 {/*  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  */}
-                <ArtistShowcase artist={this.props.showcase} />
+                <ArtistShowcase artist={this.props.showcase} artists={this.props.artists} />
 {/*  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  */}        
            
             </div>
