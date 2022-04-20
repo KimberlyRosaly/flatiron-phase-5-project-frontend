@@ -7,7 +7,7 @@ const ArtistSupports = (props) => {
 
     return (
         <div>
-            {props.artists.map( (a) => <p>a.name</p> )}
+            {props.artists.map( (a) => <p key={a.id}>a.name</p> )}
         </div>
     )
 }
