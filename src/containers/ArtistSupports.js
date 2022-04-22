@@ -8,18 +8,21 @@ const ArtistSupports = (props) => {
     return (
         <div>
             {/* { props.artists.map((a) => <p key={a.id} >a.name</p>) } */}
-            <ul>
+            <ul className='support-container'>
                     
                 <li>
-                    <h2>{ props.artists ? props.artists[0].name : null }</h2>
+                    <h2>{props.artists ? props.artists[0].name : null}</h2>
+                    <img src={props.artist ? props.artist[0].image_url : null} />
                 </li>
                 
                 <li>
-                    <h2>{ props.artists ? props.artists[1].name : null }</h2>
+                    <h2>{props.artists ? props.artists[1].name : null}</h2>
+                    <img src={props.artist ? props.artist[1].image_url : null} />
                 </li>
                 
                 <li>
-                    <h2>{ props.artists ? props.artists[2].name : null }</h2>
+                    <h2>{props.artists ? props.artists[2].name : null}</h2>
+                    <img src={props.artist ? props.artist[2].image_url : null} />
                 </li>
 
             </ul>
