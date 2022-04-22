@@ -56,6 +56,19 @@ body {
   color: red;
 }
 /** =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/** - - - - - - - - - - - - - - -ARTIST SUPPORTS <3 */
+.support-container {
+  display: flex;
+}
+.support-container li {
+  flex: 1 1;
+}
+.support-container img {
+  height: 20px;
+  width: 100px;
+}
+
+/** =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 .showcase {
   font-family: 'VT323', monospace;
   background-color: black;
