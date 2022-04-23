@@ -60,11 +60,11 @@ body {
 .support-container {
   display: flex;
 }
-.support-container li {
+.support-container div {
   flex: 1 1;
 }
 .support-container img {
-  height: 20px;
+  height: 100px;
   width: 100px;
 }
 
