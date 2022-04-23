@@ -2,30 +2,38 @@ import React from 'react'
 
 const ArtistSupports = (props) => {
     // CREATE PASSAGEWAY TO TEST FOR INCOMING OBJECTS VIA CONSOLE
-    // const aa = props.artists ? props.artists : null
-    // console.log("INDEX:", props, aa)
+    const aa = props.artists ? props.artists : null
+    console.log("INDEX:", props, aa)
 
     return (
         <div>
             {/* { props.artists.map((a) => <p key={a.id} >a.name</p>) } */}
-            <ul className='support-container'>
+            <hr />
+            <h2>S I S T E R - A R T I S T S</h2>
+            <h2>ARTISTS I SUPPORT</h2>
+            <h1>☟</h1>
+            <div className='support-container'>
                     
-                <li>
+                <div>
                     <h2>{props.artists ? props.artists[0].name : null}</h2>
-                    <img src={props.artist ? props.artist[0].image_url : null} />
-                </li>
+                    <img src={props.artists ? props.artists[0].image_url : null} />
+                    <h2>{props.artists ? props.artists[0].title : null}</h2>
+                    
+                </div>
                 
-                <li>
+                <div>
                     <h2>{props.artists ? props.artists[1].name : null}</h2>
-                    <img src={props.artist ? props.artist[1].image_url : null} />
-                </li>
+                    <img src={props.artists ? props.artists[1].image_url : null} />
+                    <h2>{props.artists ? props.artists[1].title : null}</h2>
+                </div>
                 
-                <li>
+                <div>
                     <h2>{props.artists ? props.artists[2].name : null}</h2>
-                    <img src={props.artist ? props.artist[2].image_url : null} />
-                </li>
+                    <img src={props.artists ? props.artists[2].image_url : null} />
+                    <h2>{props.artists ? props.artists[2].title : null}</h2>
+                </div>
 
-            </ul>
+            </div>
         </div>
     )
 }
